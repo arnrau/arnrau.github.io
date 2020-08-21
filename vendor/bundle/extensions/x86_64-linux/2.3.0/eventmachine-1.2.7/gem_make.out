@@ -1,0 +1,20 @@
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.3 -r ./siteconf20200304-26581-1o9z9bp.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/arne/minimal_mistakes_jekyll/vendor/bundle/extensions/x86_64-linux/2.3.0/eventmachine-1.2.7/mkmf.log
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20200304-26581-8g06gf

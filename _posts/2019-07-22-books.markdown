@@ -1,0 +1,147 @@
+---
+layout: single
+title:  "Curated book list for all interested people who work with me. "
+date:   2019-07-22 12:34:57 +0100
+categories: literature
+author_profile: true
+breadcrumbs: true  # disabled by default
+read_time: true
+
+author:
+  name     : "Arne Raulf"
+  avatar   : "assets/images/foto-raulf.jpg"
+  bio      : "Postdoc at Bioinformatics/Computational Biology Lab of Axel Mosig. AI/ML in physical/biological problems."
+  location : "Bochum, Germany" 
+
+---
+In many situations I will discuss different paper with students, that recently around in our, or a related field. In order to create a common ground, I have always found it useful when I have received book recommendations from experienced people. I will try my best to present here only books that I find useful and personally own or have read. 
+
+Furthermore, I will try to divide this list into different sections, as we are dealing with a interdisciplinary approach in our work.
+
+# Basic Math Books
+
+### Numerical Methods for Scientists and Engineers, Second Edition from Richard Hamming.
+Actually this books starts with a very well known quote from Hamming. 
+> THE PURPOSE OF COMPUTING IS INSIGHT, NOT NUMBERS.
+
+Nearly, everythingyou need to now about this book is somehow expressed in this quote. Highly accessible and good read about the branch of math that we're mostly using in AI/ML, called applied math. This book is about the bread-and-butter stuff, not about latest research. If want to know where something could go, you need to the roots of an idea.
+
+### Numerical Methods for Scientists and Engineers by H. M. Antia
+Very clear book which discusses most of the mathematical foundations which we use mostly. Slightly more theoretical and broader than Hamming's book. This book is more a textbook than a transfer of experience as in Hamming. But it is also very unwieldy. A plus of the book is the enclosed CDROM with C/FORTRAN code of the examples.
+
+### Handbook of Mathematics from Bronshtein and Semendyayev.
+This is the one and only reference book in mathematics I think, but you need to know what you are doing with it and what you are looking for! I only have the German book in the seventh edition of 2008, so I can say little about the English version.
+
+### Applied Probability Models With Optimization Applications by Sheldon Ross
+I have the reprinted version from Dover Books. Quite old book but of important significance. Statistical processes are what we have before us in the form of data. Statistical processes are also what we want to investigate with regard to the question what deep learning can really learn. Clear book and to the point...Read it!
+
+# AI/ML and Statistical Learning
+### The Elements of Statistical Learning by Hastie, Tibshirani and Friedman.
+To me this is the most comprehensive math book on a lot of topics from AI/ML. What makes this book so good is the fact that the authors make comparisons in the form of benchmarks for a large number of algorithms under certain conditions. Further, they are discussing bibliographic notes and give exercises. Last one you will love some day, when you forget to prepare the exercises to the lecture from your boss. 
+But it's somewhere between a textbook and a reference book. For example the Chapter 11 about Neural Networks is around 27 pages long and in my edition they talking about NIPS/NeurIPS challenge of 2003. When it comes to writing an article, this reference is essential for me. But you have to read it in its entirety, or rather the connected chapters to know about the math nomenclature is about. This book is also often simply called ELS. 
+
+### Pattern Recognition and Machine Learning by Chris Bishop.
+Absolut great book which seems to me in the first overview compared to the ESL as tidier, but meanwhile is not used as often as the ELS, because sometimes i get confused with the notation used in this book. But no matter how also a very good book between text and a reference book. 
+
+### Machine Learning: A Probabilistic Perspective by Kevin Murphy.
+This book deals with the topics of machine learning from the probabilistic view. This becomes immediately clear from the nomenclature and naming of the chapters. Depending on how you find your intuition, it may first become a little bumpy to use this book. But my personal recommendation to use it remains unconditional. 
+Very good book with a nice introduction, which makes sense especially for teaching. The absolute strengths of this book for me lies in the chapters on inference. These are chapters 20-24 inclusive, which I strongly recommend to read!
+
+### Neural Networks for Pattern Recognition by Chris Bishop.
+Certainly not the first book on neural networks that I would recommend, but one of the most important. My edition is quite old (1995), and in many places also scientifically outdated. Nevertheless, it is a perfect book about the basics of how neural networks can be used in pattern recognition. A standard text that should be read!
+
+
+### Introduction To Data Mining by Tan, Steinbach and Kumar. 
+Great book which I have consulted countless times for the analysis of large genomic data.  Great book which I have consulted countless times for the analysis of large genomic data.  The strength of this book lies more in the way things are presented than in the depth of representation directly. Although, as in the ELS, bibliographical tips and exercises are provided here. I especially recommend the chapters on Frequent itemset mining and association analysis. Another plus is the fact that algorithms are also presented in easily understandable pseudo code and not only mathematical formalities.
+
+
+### Deep Learning from Goodfellow, Bengio and Courville
+It should be considered rather unrivalled as there is currently nothing comparable in the sector. As the title says it refers directlyand only to Deep Learning, it should not be forgotten that books for classical machine learning and mathematics should be known in advance, even if the opening chapters give an outline of all topics. Very good book which shows its strength clearly from the second part on to the end. 
+
+
+### Intelligence Emerging by Keith Downing
+Unique book. Downing starts from the abstraction of learning in all systems and defines their representation e.g. to put them in the light of evolutionary algorithms. I will be working on this book for a long time because I wonder how far the two different areas can be combined. By this I mean, in the sense of Minsky (Society of Mind) that we are dealing with a multitude of collaborating stupid agents. Something that can be shown by the representation of evolutionary algorithms. And on the other side agent like the ones from DeepMind which seem to be very strong savants. Just for the chapters on neural representation and how to quantify it, anyone involved with AI/ML and especially DL should read this book!
+
+### Artificial Intelligence by Patrick Winston (Dover Books Frist Issue)
+This is a truly outdated book, but provides the context for modern methods. Why certain decisions and papers are so important e.g. from today's perspective. It also still defines the problems of current research. Because, only after reading this book, one understands the importance of the DeepMind/David Silver papers I think. An interesting book.
+
+
+### Gaussian Processes for Machine Learning by Rasmussen & Williams
+A very good and clear book, which gives any basis of a very interesting algorithm. You can't get around this book. Even if you don't use it directly in your work you should have read it - it is short and well explained!
+
+### Introduction to Algorithms by Cormen et al.
+Especially when working with machine learning in empirical sciences, a solid foundation of knowledge about the classes of algorithms and why such classes exist should prevail. In the field of deep learning it should not be forgotten that there is also a large number of algorithms which are still wrongly described as models. Relatively often this can be observed with the method of the Variational Autoencoder (VAE). The idea shows an algorithm using the Autoencoder model...but never mind at this point. A really good book!
+
+# Books For Teaching
+
+### Data Analysis With Open Source Tools by Philipp Janert
+The book here itself could be considered in self-study as an accompanying text for data analysis in every way. Absolutely well summarized what can happen to you, but without wanting to be scientific. A lot of experience in a book.
+
+### The Nature Of Code by Daniel Shiffman
+Unusual topic, but excellently written. This book shows how natural systems can be used in the programming language Porcessing in such a way that they can be used for artistic representations. So actually a book for digital artists. I used this book because it contains a good collection of ideas for teaching and because I was interested in digital art as such. But I am using this book to generate certain data for my reinforcement learning ideas.
+A book worth reading!
+
+# Web Resources
+
+## YouTube Channels
+
+
+### 3Blue1Brown
+[1](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+Karl Weierstrass would have liked this channel less. A channel that brings back the essential into mathematics and its application, namely intuition for the problem. 
+
+
+### Computerphile
+[2](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA)
+Great channel of Nottingham University about all the things related to computer science. 
+
+
+### Nando de Freitas
+[3](https://www.youtube.com/channel/UC0z_jCi0XWqI8awUuQRFnyw)
+
+Here Nando de Freitas published his lectures. I have recommended this channel countless times to students. Besides, his dissertation is also worth reading [4](https://www.cs.ubc.ca/~nando/papers/thesis.pdf)!
+
+### DeepMind YouTube Channel hosting the Reinforcement Learning Course by David Silver
+[5](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB)
+In my opinion the best introduction to the topic you can get
+
+
+### DeepMinds Lecture Series at UCL
+[6](https://www.youtube.com/watch?v=iOh7QUZGyiU&list=PLqYmG7hTraZCkftCvihsG2eCTH2OyGScc)
+Very good channel with current topics from ML and AI!
+
+## Websites
+
+### Jekyll
+[7](https://jekyllrb.com/)
+Great idea to use Markdown to create blogs and websites.
+
+### Michael Roses Wibesite
+[8](https://mmistakes.github.io/minimal-mistakes/)
+About the Jekyll theme that I use here!
+
+
+
+
+### Sven Kreienbrocks Website
+[9](http://kreienbrock.de/)
+The website of my friend Sven, who helped me several times as a Master of the Unix-verse. A place where you can get well maintained Linux images at this time.
+
+
+
+
+
+### Michael Nielsens DL/NN Website
+[10](http://neuralnetworksanddeeplearning.com/index.html)
+Really the best introduction for people who had nothing to do with it before. Especially in the area of the non graduated students this is a great introduction from which I shamelessly stole for my own lectures;)(with citing this, of course!). Something, everybody can do : [11](https://scholar.google.de/citations?user=ZP0eZ94AAAAJ&hl=de&oi=sra).
+Because I'm very interested in the idea as such I want to link to the standard work of the Mike and Ike, which Michael Nielsen co-wrote [12](https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information). The work about quantum computers and their theory and applications. Think about quantum enhanced machine learning!
+[13](https://arxiv.org/abs/1610.08251)
+
+
+### distill.pub
+[13](https://distill.pub/)
+This is an absolutly great online journal about ML/DL. Check it out!
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

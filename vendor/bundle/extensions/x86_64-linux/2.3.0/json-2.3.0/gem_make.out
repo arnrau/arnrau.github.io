@@ -1,0 +1,13 @@
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/json-2.3.0/ext/json
+/usr/bin/ruby2.3 -r ./siteconf20200304-26581-ohs7c2.rb extconf.rb
+creating Makefile
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR="
+make: Für das Ziel „all“ ist nichts zu tun.
+
+current directory: /home/arne/minimal_mistakes_jekyll/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR=" install

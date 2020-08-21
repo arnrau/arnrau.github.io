@@ -1,0 +1,26 @@
+---
+layout: single
+title:  "Why do I make such a blog? "
+date:   2019-07-12 09:21:15 +0100
+categories: miscellaneous
+author_profile: true
+breadcrumbs: true  # disabled by default
+read_time: true
+
+author:
+  name     : "Arne Raulf"
+  avatar   : "assets/images/foto-raulf.jpg"
+  bio      : "Postdoc at Bioinformatics/Computational Biology Lab of Axel Mosig. AI/ML in physical/biological problems."
+  location : "Bochum, Germany" 
+
+---
+For most of the posts I have students as addressees in mind, who work together with me on the projects around my current job at the ProDi in Bochum, Germany. In addition to the interesting data situation, which includes tons of high dimensional datasets, there are also the most diverse conditions that students bring with them, that I find highly interesting. I am currently working with a variety of different scientific/medical courses of study. One more reason to use the possibilities of a blog to stay on a minimum level of connection. 
+
+Furthermore I will try to discuss interesting ideas about machine learning and its applications in the empirical/scientific fields.
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

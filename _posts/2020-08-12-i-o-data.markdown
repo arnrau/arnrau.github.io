@@ -1,0 +1,148 @@
+---
+layout: single
+title:  "Input/Output Data To Your ML Projects In Python"
+date:   2020-08-12 10:32:12 +0100
+categories: data
+author_profile: true
+breadcrumbs: true  # disabled by default
+read_time: true
+usemathjax: true
+
+header:
+  image: /assets/images/HintzHall_William_Turner_Light_and_Colour_Ep5.png
+  caption: "Photo credit: [**Arne Raulf**]()"
+
+
+author:
+  name     : "Arne Raulf"
+  avatar   : "assets/images/foto-raulf.jpg"
+  bio      : "Postdoc at Bioinformatics/Computational Biology Lab of Axel Mosig. AI/ML in physical/biological problems."
+  location : "Bochum, Germany" 
+
+---
+
+
+# Long Term Storage!
+
+An important problem in the creation of training data is the provision in the form of formats, which should be supported as long as possible. In the Python ecosystem it is always Numpy, an array form that can be easily loaded into C++ [2](https://github.com/rogersce/cnpy). But I would personally not like to give away a collection of Numpy arrays, so I would always advocate giving it away in the form of a HDF5 system [3](https://support.hdfgroup.org/HDF5/doc/H5.intro.html). This data system can be distributed and used in different languages, like Python [4](https://www.h5py.org/). 
+
+# Reading a lot of files from within a directory into Python?
+
+I personally work and live completely in the Linux world and therefore most of the tips are related to this area. One of them is the following code snippet. Here you should load all JPEG files in the folder into a list and from this list into a Numpy Array. 
+
+
+{% highlight python %}
+
+import numpy as np
+import glob
+import scipy.misc as sm
+
+image_list = []
+for filename in glob.glob('*.jpeg'):
+    im = sm.imread(filename)
+    image_list.append(im)
+
+out = np.asarray(image_list)
+np.save('data.npy',out )
+{% endhighlight %}
+
+
+While I have used such a similar code snippet X times already, an error occured:
+
+{% highlight python %}
+OSError: [Errno 24] Too many open files:
+{% endhighlight %}
+
+Inside the folder I had more than 1300 files which exceeded the internal limit of 1024 files in the system at this point. To get around this limit on a Unix system is relatively easy, as one can see from the snippet below:
+
+{% highlight bash %}
+
+ulimit -n 4096
+{% endhighlight %}
+
+Basically, the memory utilization of the data we use is an important thing. If you look at the code snippet above for loading data into a Numpy array, you will notice that both the big list and the array are in RAM. I strongly recommend a functional way of working here, which returns only the desired part within the namespaces. This means that all parts are needed during the creation of the data, but only the desired part remains in memory after the function call. This is important for working together on bigger remote machines!
+
+
+# Saving all data in HDF5 format
+
+This step is not always easy but it is enormously worthwhile. This is exactly the point where science can be accelerated. Currently we are also doing far too little in the sector of data sets in the review process. There are more and more voices that papers on pure datasets are currently being rejected by major conferences, which is incomprehensible to me!
+Just look at the citations for the MNIST handwritten digits [5](http://yann.lecun.com/exdb/mnist/) and you will quickly realize how important curated datasets are in AI/ML. The gradient based learning methods of modern deep learning is currently the easiest to look at from an empirical point of view. If we know the properties of a data set exactly, we can better draw conclusions about the methods.
+But back to the creation of data in the form of HDF5 data:
+
+
+
+
+{% highlight python %}
+
+
+import h5pydata1 = f.get('array_allPneumo').value
+
+with h5py.File('Pneumo_CT_Train.hdf5', 'w') as f:
+    f.create_dataset('array_normal', data=dd_)
+    f.create_dataset('array_allPneumo', data=d1)
+    
+{% endhighlight %}
+
+
+
+# Reading Data from HDF5 format
+
+If you have an unknown HDF5 format, the first thing to do is to check the names of the records in it:
+
+{% highlight python %}
+
+In [7]: f = h5py.File('Pneumo_CT_Train.hdf5', 'r')
+
+In [8]: list(f.keys())
+Out[8]: ['array_allPneumo', 'array_normal']
+
+
+{% endhighlight %}
+
+The step of reading and thus the actual memory usage is done like this:
+
+
+{% highlight python %}
+
+In [12]: data1 = f.get('array_allPneumo').value
+
+In [13]: data1.shape
+Out[13]: (2240, 224, 224)
+
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight python %}
+
+
+
+{% endhighlight %}
+
+
+
+
+
+## References
+#### ulimit [1](https://ss64.com/bash/ulimit.html)
+#### Reading Numpy into C++ [2](https://github.com/rogersce/cnpy)
+#### HDF5 [3](https://support.hdfgroup.org/HDF5/doc/H5.intro.html)
+#### H5Py as HDF5 Binding to Python [4](https://www.h5py.org/)
+#### LeCun MNIST Page [5](http://yann.lecun.com/exdb/mnist/)
+#### Python and HDF5 [6](https://www.pythonforthelab.com/blog/how-to-use-hdf5-files-in-python/)
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+

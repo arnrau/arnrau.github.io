@@ -14,16 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Machine Learning Based Science
-email:  arne.raulf@googlemail.com
+email:  arne.raulf@
 description: >- # this means to ignore newlines until "baseurl:"
-  Science is magic that works! (Vonnegut)
   Blog about Machine Learning in Science.
-  Resource for my collaborating students. 
+  Mostly Resources for my collaborating students. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arne_raulf
 github_username:  arnrau
 search: true
+toc: true
 
 # Build settings
 markdown: kramdown
@@ -35,9 +35,12 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-repository: arnrau/minimal_mistakes_jekyll.github.io.
+repository: arnrau.github.io.
 include:
   - _pages
+  - _posts
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -66,18 +69,18 @@ author:
   bio      : "Postdoc at Bioinformatics/Computational Biology Lab of Axel Mosig. AI/ML in physical/biological problems."
   location : "Bochum, Germany" 
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/arne_raulf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/arnrau"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
 
 footer:
   links:
@@ -87,14 +90,17 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  url: "https://instagram.com/"
 
 defaults:
+  # - scope:
+  #  path: ""
+  #  type
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -103,6 +109,7 @@ defaults:
       comments: true
       share: true
       related: true
+      mathjax: true
   # _pages
   - scope:
       path: "_pages"
