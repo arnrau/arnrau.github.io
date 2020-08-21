@@ -46,7 +46,6 @@ In both cases the test data set remained unchanged and the same hyper-parameters
 The first figure shows, how training errors and loss behave on the same data set using different errors on the target. The red curve shows the regular course without artificial errors, the blue curve shows the course using a 5% error in the training data set and the purple curve shows the whole for a 10% error.
 I'm not going to make the point here, that an target error can be estimated directly from the curves behavior, but if you look at the slope of the loss curves, you can easily see how it changes. So keep that in mind! 
 The model I have chosen is deliberately small and should have quickly exhausted its capacities and run into overfitting, so training errors converge! 
-At this point I would suggest to inject some noise to the label and look were this  
 
 At this point I would suggest to use exactly this idea, add noise to the target variable, for example 5 and 10% noise and see where your original model lies in comparison of loss curves. This point becomes important when you actually make the network converge over longer period of epochs. As a comparison in Fig.2, here one can see the same networks without known error (regular) in the target variable and with a known 10% error in the target variable.
 
