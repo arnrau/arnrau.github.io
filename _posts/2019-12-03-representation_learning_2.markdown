@@ -2,7 +2,7 @@
 layout: single
 title:  "Representation Learning As A Scientific Key II: Data"
 date:   2019-12-03 16:07:45 +0100
-categories: methods, data, spectroscopy
+categories: methods data spectroscopy
 author_profile: true
 breadcrumbs: true  # disabled by default
 read_time: true
